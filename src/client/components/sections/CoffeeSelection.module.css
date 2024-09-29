@@ -1,0 +1,107 @@
+.root {
+}
+
+.text {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.textTitle {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.value {
+    text-align: center;
+    margin-bottom: 64px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.buttons {
+}
+.tableContainer {
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader, .tableData {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.tableHeader {
+  background-color: #4CAF50;
+  color: white;
+  border-bottom: 2px solid #ddd;
+}
+
+.tableRow:nth-child(even) {
+ 
+}
+
+.tableRow:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.tableData {
+  border-bottom: 1px solid #ddd;
+}
+
+.tableRow:last-child .tableData {
+  border-bottom: none;
+}
+
+.button {
+    width: 80px;
+    height: 80px;
+    margin: 12px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 100ms ease-in-out;
+}
+
+:global(html.light) .button {
+    background: var(--theme-light-numpad-button-background);
+    color: var(--theme-light-numpad-button-color);
+
+    &:hover {
+        background: var(--theme-light-numpad-button-hover);
+    }
+
+    &:active {
+        background: var(--theme-light-numpad-button-active);
+    }
+}
+
+
+:global(html.dark) .button {
+    background: var(--theme-dark-numpad-button-background);
+    color: var(--theme-dark-numpad-button-color);
+
+    &:hover {
+        background: var(--theme-dark-numpad-button-hover);
+    }
+
+    &:active {
+        background: var(--theme-dark-numpad-button-active);
+    }
+}
